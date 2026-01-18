@@ -1,14 +1,197 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Štěpán Galousek</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+    <header>
+        <h1>Štěpán Galousek</h1>
+        <p class="subtitle">Student Informačních studií a knihovnictví</p>
+        
+        <div class="bio-container">
+            <div class="bio-section">
+                <strong>Kdo jsem?</strong>
+                Ahoj, jmenuji se Štěpán a jsem studentem prvního ročníku navazujícího studia na KISKu. Jsem člověk, kterého baví spousta věcí. Rád objevuji a zkouším nové koníčky, i když u všeho nevydržím věčně a mé zájmy se časem mění. Poslední dobou jsem se ponořil do financí – čtu o tom knihy, sleduji trhy i vývoj společností a učím se investovat. Mimo to provozuji s bráchou vinárnu, což mi dává dost zabrat, ale je to fajn zkušenost. Dříve jsem při cestování hodně fotil, dnes už na to nemám tolik času, ale občas si něco cvaknu – bavila mě hlavně následná úprava fotek. A když chci úplně vypnout, rád si zahraju nějakou strategii na PC.
+            </div>
+
+            <div class="bio-section">
+                <strong>Moje motivace</strong>
+                Pro tento obor jsem se rozhodl, protože mě baví objevovat nové věci a neustrnout na místě. Dnešní doba je rychlá, někdy až divoká, a KISK vnímám jako místo, kde si můžu v tomhle chaosu rozšířit obzory. Zajímají mě nové technologie a to, co se reálně používá v praxi. Nejde mi ale jen o nástroje samotné – s nástupem AI se mění i pravidla informační gramotnosti a já chci pochopit, jak se v tom orientovat. Chci být u toho a zkoušet věci teď, když se ta pravidla teprve tvoří.
+            </div>
+
+            <div class="bio-section">
+                <strong>Očekávání a Cíl</strong>
+                Od studia čekám hlavně to, že nezůstaneme jen u teorie. Chci si nové technologie a nástroje rovnou osahat a zkoušet na reálných věcech. Taky doufám, že potkám lidi, kteří to berou podobně a budeme se moct vzájemně inspirovat. Zkrátka, aby mě škola naučila orientovat se v tom množství informací, co na nás každý den padá. Mým cílem je samozřejmě studium dokončit, ale důležitější je pro mě něco jiného – chci odcházet s pocitem, že rozumím nástrojům, které hýbou světem, a umím je reálně využít. Ať už v podnikání, při investování nebo prostě v životě. Nechci se jen naučit "jak to funguje", ale hlavně "jak to použít".
+            </div>
+        </div>
+        
+        <div class="line-start"></div>
+    </header>
+
+    <main class="timeline-container">
+
+        <div class="semester-label">1. SEMESTR</div>
+
+        <div class="card-wrapper left" onclick="openModal(this)">
+            <div class="content">
+                <h3>Informační vědy</h3>
+                <p>Teoretický základ oboru, práce s daty a definice informace...</p>
+                <div class="read-more">Číst recenzi &rarr;</div>
+                
+                <div class="full-text">
+                    <p>Hned od začátku byly hodiny zaměřené spíše na hledání souvislostí, což mi sedlo. Díky nadšení doc. Michala Černého nešlo o mechanické "biflování", ale o snahu pochopit informační vědu jako celek – od filosofie informace přes informační gramotnost až po etiku. Super zpestřením byl Mentimeter, který do výuky vnesl dynamiku. Velkou částí předmětu byl skupinový projekt na téma bibliometrie a scientometrie, kde jsme tvořili studijní materiály pro ostatní a následně je prezentovali spolužákům.</p>
+                    <p>Nejvíc mi utkvěla týmová práce. Ve skupině nám to klapalo a práci jsme si rozdělili bez problémů. Co bylo nové a složité, bylo hodnocení ostatních skupin. Nikdy jsem to předtím nedělal a upřímně jsem chvíli hledal způsob, jak to napsat. Chtěl jsem být objektivní, ale zároveň nikoho neshodit. Byla to ale zajímavá zkušenost postavit se na tu "druhou stranu" a zkusit někomu dát smysluplnou zpětnou vazbu.</p>
+                    <p>Celý ten koncept, kdy se třída rozdělí a "studenti učí studenty", byl zajímavý experiment. Bylo vidět, že se to takhle možná zkoušelo poprvé – nebylo to úplně dokonalé a občas bych uvítal přesnější zadání, ale ve výsledku to hodnotím kladně. Tvořit něco v týmu prostě funguje jinak, než když člověk dělá úkol sám doma. Musíte se sladit a kooperovat, což je pro praxi možná důležitější než samotné téma projektu.</p>
+                    <p>Z předmětu si odnáším nejen "měkké dovednosti" jako týmovou spolupráci a dávání zpětné vazby, ale i pěkný průřez problematikou informačních věd – pomohlo mi to se v oboru líp zorientovat. Pokud bych si měl odnést jedno jméno, které doc. Černý často zmiňoval, je to Luciano Floridi – příští knížka ke čtení je jasná.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-wrapper right" onclick="openModal(this)">
+            <div class="content">
+                <h3>Literatura, knihovní procesy a trh</h3>
+                <p>Cesta knihy od vydavatele až na regál v knihovně...</p>
+                <div class="read-more">Číst recenzi &rarr;</div>
+
+                <div class="full-text">
+                    <p>Před kurzem jsem o literatuře a knižním trhu moc nevěděl. Předmět byl rozdělen do tří bloků s různými vyučujícími: literárněvědný s profesorem Kylouškem, knihovnický s dr. Mazáčovou a ediční s Mgr. Štičkovou. Ocenil jsem, že se střídali přednášející a každý přinesl svou expertízu. Zajímavé byly informace o knižním trhu – kolik knih u nás ročně vychází, kolik je novinek a překladů, srovnání s jinými zeměmi.</p>
+                    <p>Líbilo se mi, že kurz byl pojatý praktičtěji, než jsem čekal, možná je to těmi výstupními pracemi, které na mě ještě čekají – reflektivní práce o hodnocení knihovny a skupinový ediční projekt. Na tu týmovou spolupráci se docela těším, i když celkově to bude výzva. Projekty jsou orientovány hodně prakticky, což je fajn. Určitě to bude zkušenost, která se mi bude hodit.</p>
+                    <p>S odstupem kurz hodnotím jako užitečný koncepčně – dal mi základní orientaci v oblasti, která je potřebná. Uvidím, jak oba projekty dopadnou, jak budou náročné na vypracování a co si z nich nakonec odnesu, zejména ze skupinového projektu, kde se mám soustředit na marketingovou část.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-wrapper left" onclick="openModal(this)">
+            <div class="content">
+                <h3>DISRI</h3>
+                <p>Pohled na design z jiné perspektivy, behaviorální design a role designu ve společnosti...</p>
+                <div class="read-more">Číst recenzi &rarr;</div>
+
+                <div class="full-text">
+                    <p>Před kurzem jsem si myslel, že design je primárně o web designu a estetice. Zpětně vidím, jak zjednodušený ten pohled byl. Během semestru jsem zjistil, že jádro designu leží jinde. Velkým přínosem byla atmosféra v hodinách a hostující lektoři – zejména Vojtěch Velíšek a jeho přednáška o AI v designu.</p>
+                    <p>Největší změna je posun v myšlení. Za hlavní přínos považuji schopnost dívat se na problémy v širším kontextu. Zaujal mě hlavně behaviorální design – zjištění, že můžeme lidi "navést" správným směrem tak, aby to pro ně bylo jednodušší a přirozenější. Co se týče portfolia, těší mě, jak se mi podařilo zachytit ironii tématu. S odstupem ale vidím rezervy – kdybych měl možnost pracovat na projektu znovu, věnoval bych mu víc času a zaměřil se na téma odtržení jedince od rodiny.</p>
+                    <p>Díky tomuhle kurzu jsem zjistil, že design je pro mě atraktivní oblast, o které bych se chtěl dozvědět víc. Otevřelo mi to oči v tom, jak důležité je přemýšlet nad věcmi z více úhlů. Do budoucna zvažuji zapsání více předmětů orientovaných na design.</p>
+                    <p>Jako téma pro anotované portfolio, které bylo součástí uzavření předmětu jsem si zvolil “Paradox nápravy: Design svobody v kleci”. Zde jsem zkoumal roli designu ve vězení – prostředí postavené na omezování. Zajímalo mě napětí mezi fyzickou kontrolou a digitálním únikem. Hlavní otázka zněla provokativně: funguje design jako nástroj nápravy, nebo jen "digitální sedativum"?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-wrapper right" onclick="openModal(this)">
+            <div class="content">
+                <h3>Elements of AI</h3>
+                <p>Úvod do principů umělé inteligence, strojového učení a neuronových sítí...</p>
+                <div class="read-more">Číst recenzi &rarr;</div>
+
+                <div class="full-text">
+                    <p>Předmět jsem si zapsal ze zvědavosti. AI mě zajímá z pohledu uživatele – baví mě zkoušet, co dokáže, ale neměl jsem představu, jak funguje "uvnitř". Chtěl jsem nahlédnout pod pokličku a pochopit principy za těmi nástroji. Velmi mi vyhovovala online forma výuky – získal jsem flexibilitu a mohl plnit úkoly podle vlastního rozvrhu.</p>
+                    <p>Teď už vím, že AI je ve své podstatě efektivní model založený na statistice. Nejvíc mě bavily sekce o strojovém učení a neuronových sítích, díky kterým mi docvakly souvislosti. Oceňuju, že kurz dal reálné základy, ne jen povrchní povídání. Zjistil jsem, že mě tahle technická stránka věcí baví víc, než jsem čekal.</p>
+                    <p>S odstupem musím vyzdvihnout skvělou grafiku a uživatelskou přívětivost kurzu. Materiály se procházely intuitivně a studium bylo plynulé. Považuji to za výborně zvládnutý úvod do složité problematiky.</p>
+                    <p>Celková zkušenost mě motivovala natolik, že zvažuju absolvování navazujícího kurzu Building AI. Tajně doufám, že v dalším semestru ho zařadí jako volitelný předmět a budou za to kredity.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-wrapper left" onclick="openModal(this)">
+            <div class="content">
+                <h3>Vzdělávací technologie</h3>
+                <p>E-learning, LMS systémy a AI ve vzdělávání...</p>
+                <div class="read-more">Číst recenzi &rarr;</div>
+
+                <div class="full-text">
+                    <p>Původně jsem si předmět zapsal spíš "do počtu", ale nakonec toho nelituju. Velkou zásluhu má doc. Michal Černý a jeho poutavý styl přednášení. Kurz byl časově náročný a plný úkolů, ale díky praktickému zaměření mě to bavilo. Vyzkoušel jsem si řadu nových nástrojů, ke kterým bych se jinak nedostal.</p>
+                    <p>Ze všech nástrojů mě nejvíc bavil Twine, ve kterém jsem tvořil hru o finanční gramotnosti. Hodně mi utkvěl taky Webflow – aplikace využívající AI k tvorbě webu. Zaujal mě i úkol pro KPI, kde jsem přemýšlel nad finanční udržitelností vzdělávacího projektu. Naopak nutným zlem byla práce s Moodlem, prostředí které snad bylo stvořeno aby s ním nikdo nechtěl pracovat.</p>
+                    <p>S odstupem vidím velký kontrast oproti době, kdy jsem chodil na střední školu (nutno dodat, že je to doba, kdy jsem dostal svůj první dotykový telefon). Kdybychom se tehdy učili formou příběhů v Twine nebo měli Makerspace s 3D tiskem, výuka by vypadala úplně jinak. Návštěva Makerspace v knihovně FF mi ukázala, jak interaktivní může dnešní vzdělávání být.</p>
+                    <p>Odnáším si přehled o nových technologiích a jiný pohled na vzdělávání. V budoucnu plánuju víc využívat Twine a navštívit Makerspace na FF, abych si tam vyzkoušel realizovat vlastní projekty.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-wrapper right" onclick="openModal(this)">
+            <div class="content">
+                <h3>Around the world with academic libraries</h3>
+                <p>Pohled na fungování akademických knihoven v zahraničí...</p>
+                <div class="read-more">Číst recenzi &rarr;</div>
+
+                <div class="full-text">
+                    <p>Předmět byl postavený na přednáškách knihovníků z akademického prostředí ze světa – z USA, Kanady, Portugalska a dalších států. Přednášky probíhaly v angličtině, což jsem ocenil, každá příležitost procvičit si angličtinu je fajn. Zaujala mě Heather Howard z Purdue University, která naťukla i situaci za Trumpa, která není pro knihovny úplně ideální. Zakončením předmětu byla esej na námi vybrané téma, které se probíralo na hodinách nebo které hostující přednášející zmiňovali. Já jsem si zvolil From Gatekeepers to Facilitators: Redefining the Academic Librarian in the Age of AI.</p>
+                    <p>Esej byla náročná – chvíli mi trvalo najít to pravé téma, a i pak to byla výzva. Angličtina, struktura argumentace... nebylo to rozhodně easy. Téma jsem si vybral pro jeho aktuálnost a dostatek zdrojů k tématu. Celkově předmět nebyl špatný, ale nenašel jsem si k němu úplně cestu.</p>
+                    <p>S odstupem si uvědomuji, že formát s mezinárodními hosty byl zajímavý koncept – dostat přímo perspektivy lidí z praxe z různých zemí. Pro někoho, kdo se chce věnovat akademickým knihovnám nebo mezinárodní spolupráci, to muselo být skvělé. U mě to ale nezapálilo nějakou výraznější jiskru, i když chápu hodnotu toho přístupu.</p>
+                    <p>Odnáším si hlavně obecné povědomí o výzvách, kterým čelí knihovny v digitální době, a procvičenou akademickou angličtinu. Také to byla užitečná zkušenost – hlavně co se týče psaní delšího textu v angličtině a orientace v anglických zdrojích.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-wrapper left" onclick="openModal(this)">
+            <div class="content">
+                <h3>Seminář k diplomové práci I: Východiska a metodologie</h3>
+                <p>Přehled témat pro diplomovou práci a seznámení s metodologií...</p>
+                <div class="read-more">Číst recenzi &rarr;</div>
+
+                <div class="full-text">
+                    <p>Předmět byl postavený jako série přednášek velké části učitelů na KISKu. Každý přiblížil svou oblast a možná témata pro diplomky. Bylo zajímavé vidět tu šíři – od uživatelské zkušenosti a designu služeb, přes informační gramotnost a AI, knihovnické procesy, vzdělávací technologie až po management. Každá přednáška otevřela jiný úhel pohledu a jiné možnosti.</p>
+                    <p>Problém je, že i na konci semestru pořád nevím, jakým směrem se chci vydat. Chvíli jsem dokonce zvažoval, že předmět ani nebudu ukončovat. Přednášky mi ukázaly možnosti, ale zároveň mě trochu zahltily – možná tam bylo až moc variant. Zjistil jsem o sobě, že potřebuju víc času na rozhodnutí a asi i konkrétnější vodítka.</p>
+                    <p>S odstupem si myslím, že pro někoho, kdo už má aspoň rámcovou představu, co chce dělat, je kurz super. Pro mě to bylo spíš zahlcující.</p>
+                    <p>Aspoň vím, že mám ještě čas se rozmýšlet, i když ten tlak na rozhodnutí už cítím. Kdybych kurz dělal znovu, možná bych se víc aktivně ptal vyučujících a zkusil si některá témata víc prozkoumat sám.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="semester-label">2. SEMESTR</div>
+
+        <div class="card-wrapper right" onclick="openModal(this)">
+            <div class="content">
+                <h3>Učící se společnost</h3>
+                <p>Klíčové texty a koncepty vzdělávání v moderní společnosti...</p>
+                <div class="read-more">Číst recenzi &rarr;</div>
+                <div class="full-text">
+                </div>
+            </div>
+        </div>
+
+        <div class="card-wrapper left" onclick="openModal(this)">
+            <div class="content">
+                <h3>Základy marketingu</h3>
+                <p>Principy marketingové komunikace a strategie...</p>
+                <div class="read-more">Číst recenzi &rarr;</div>
+                <div class="full-text">
+                </div>
+            </div>
+        </div>
+
+        <div class="card-wrapper right" onclick="openModal(this)">
+            <div class="content">
+                <h3>Informační chování</h3>
+                <p>Analýza způsobů, jak lidé vyhledávají a zpracovávají informace...</p>
+                <div class="read-more">Číst recenzi &rarr;</div>
+                <div class="full-text">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="myModal" class="modal-overlay" onclick="closeModalOutside(event)">
+        <div class="modal-box">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <div id="modalBody" class="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Kontakt: galousek.s@gmail.com</p>
+    </footer>
+
+    <script src="main.js"></script>
+
 </body>
 </html>
