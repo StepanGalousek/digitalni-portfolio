@@ -1,4 +1,9 @@
 function openModal(element) {
+    // Zkontroluje, zda kliknutí nebylo na odkaz projektu
+    if (event.target.classList.contains('project-link')) {
+        return; // Neotevře modální okno
+    }
+
     var title = element.querySelector('h3').innerHTML;
     var fullText = element.querySelector('.full-text').innerHTML;
 
