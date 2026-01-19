@@ -60,7 +60,7 @@ header .subtitle { font-size: 1.2rem; text-transform: uppercase; letter-spacing:
     border: 4px solid #aaaaaa;
     object-fit: cover;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    position: absolute;
+    position: absolute; /* OPRAVA: Toto pravidlo zajistí, že fotky budou nad sebou */
     top: 0;
     left: 0;
     -webkit-backface-visibility: hidden; /* Safari */
@@ -69,6 +69,7 @@ header .subtitle { font-size: 1.2rem; text-transform: uppercase; letter-spacing:
 
 .profile-pic-front {
     object-position: 50% 20%; /* Vycentrování neformální fotky */
+    transform: rotateY(0deg);
 }
 
 .profile-pic-back {
@@ -147,7 +148,7 @@ header .bio-section strong {
 }
 
 .left { left: 0; text-align: right; }
-.right { left: 50; text-align: left; margin-left: 50%; }
+.right { left: 50%; text-align: left; }
 
 .content {
     padding: 20px;
