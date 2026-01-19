@@ -260,20 +260,56 @@ header .bio-section strong {
 footer { background-color: var(--header-bg); color: #777; text-align: center; padding: 40px 20px; margin-top: 50px; }
 footer a { color: white; }
 
+/* --- RESPONZIVNÍ DESIGN --- */
+
+/* Tablet a menší */
 @media screen and (max-width: 768px) {
+    header h1 { font-size: 2.8rem; }
     .profile-pic-container {
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
+    }
+    header .bio-container {
+        padding: 0 1rem;
     }
 }
 
+
+/* Mobilní telefony */
 @media screen and (max-width: 600px) {
-    .timeline-container::after { left: 31px; }
-    .card-wrapper { width: 100%; padding-left: 70px; padding-right: 25px; margin-left: 0; }
-    .left { text-align: left; }
-    .left .content { border-right: none; border-left: 5px solid var(--accent-color); }
-    .card-wrapper::after { left: 21px; right: auto; }
-    .right { margin-left: 0; }
+    /* --- Oprava časové osy pro mobily --- */
+
+    /* 1. Přesuneme hlavní svislou čáru úplně doleva */
+    .timeline-container::after {
+        left: 30px;
+    }
+
+    /* 2. Všechny karty budou zabírat 100% šířky a budou mít odsazení zleva */
+    .card-wrapper {
+        width: 100%;
+        padding-left: 70px; /* Vytvoří místo pro čáru */
+        padding-right: 20px;
+    }
+
+    /* 3. Zrušíme posunutí pro levé i pravé karty, aby byly pod sebou */
+    .left,
+    .right {
+        left: 0;
+        text-align: left; /* Sjednotíme zarovnání textu */
+    }
+
+    /* 4. Sjednotíme vzhled karet - všechny budou mít border vlevo */
+    .left .content {
+        border-right: none;
+        border-left: 5px solid var(--accent-color);
+    }
+    
+    /* 5. Posuneme kolečka na časové ose, aby seděla na čáře */
+    .card-wrapper::after {
+        left: 20px; /* (30px pozice čáry - 10px polovina šířky kolečka) */
+    }
+
+    /* --- Další drobné úpravy pro mobil --- */
     header h1 { font-size: 2.5rem; }
     header .bio-container { text-align: justify; }
     .modal-box { padding: 25px; }
