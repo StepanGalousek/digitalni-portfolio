@@ -90,6 +90,18 @@ header .bio-container {
     line-height: 1.8;
 }
 
+/* --- ZAROVNÁNÍ POPISKU FOTKY --- */
+.photo-caption {
+    /* Toto pravidlo cíleně přebíjí zarovnání do bloku z rodiče */
+    text-align: center !important; 
+    text-align-last: center !important;
+
+    /* Ostatní styly */
+    font-size: 0.8rem;
+    color: #aaaaaa;
+    margin-bottom: 2rem;
+}
+
 header .bio-section { 
     margin-bottom: 20px;
     text-align: justify;
