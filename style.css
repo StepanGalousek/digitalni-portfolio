@@ -54,27 +54,26 @@ header .subtitle { font-size: 1.2rem; text-transform: uppercase; letter-spacing:
 }
 
 .profile-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     border-radius: 50%;
     border: 4px solid #aaaaaa;
     object-fit: cover;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    position: absolute; /* OPRAVA: Toto pravidlo zajistí, že fotky budou nad sebou */
-    top: 0;
-    left: 0;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
 }
 
 .profile-pic-front {
-    object-position: 50% 20%; /* Vycentrování neformální fotky */
-    transform: rotateY(0deg);
+    object-position: 50% 20%;
 }
 
 .profile-pic-back {
     transform: rotateY(180deg);
-    object-position: 50% 50%; /* Vycentrování formální fotky */
+    object-position: 50% 50%;
 }
 
 .profile-pic-container:hover .profile-pic-flipper,
