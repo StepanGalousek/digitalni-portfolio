@@ -39,3 +39,11 @@ window.addEventListener('load', checkScroll);
 
 // Spustit při scrollování
 window.addEventListener('scroll', checkScroll);
+
+// --- OTÁČENÍ FOTKY ---
+document.addEventListener('DOMContentLoaded', (event) => {
+    const photoContainer = document.querySelector('.profile-pic-container');
+    setInterval(() => {
+        photoContainer.classList.toggle('flipped');
+    }, 5000);
+});
